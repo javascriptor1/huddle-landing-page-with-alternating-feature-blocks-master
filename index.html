@@ -21,24 +21,13 @@
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
     </title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body class="font-Open sans text-lg">
     <!-- =================== wrapper container ======================== -->
     <div class="p-8">
       <header class="flex justify-between items-center mb-16">
         <div>
-          <img src="images/logo.svg" alt="Huddle Logo" class="w-36" />
+          <img src="images/logo.svg" alt="Huddle Logo" class="w-20 lg:w-36" />
         </div>
 
         <a
@@ -50,24 +39,25 @@
       </header>
       <!-- ============================= Hero section here ============================================== -->
       <section
-        class="flex flex-col lg:flex-row text-VeryDarkCyan items-center justify-center space-y-8 lg:spacey-0"
+        class="flex flex-col lg:flex-row text-VeryDarkCyan items-center justify-center space-y-8 lg:space-y-0 lg:gap-12"
+        id="hero-section"
       >
-        <div class="flex flex-col space-y-8">
-          <h1 class="text-2xl text-center">
+        <div class="flex flex-col space-y-8 lg:w-[40%] p-2">
+          <h1 class="text-2xl lg:text-4xl text-center lg:text-left">
             Build The Community Your Fans Will Love
           </h1>
-          <p class="text-center text-sm font-semibold">
+          <p class="text-center lg:text-left text-sm font-semibold">
             Huddle re-imagines the way we build communities. You have a voice,
             but so does your audience. Create connections with your users as you
             engage in genuine discussion.
           </p>
           <a
             href=""
-            class="bg-Pink text-white text-xs py-2 px-12 rounded-full font-bold w-[220px] mx-auto"
+            class="bg-Pink text-white text-xs py-2 px-12 lg:py-4 rounded-full font-bold w-[220px] mx-auto lg:ml-0"
             >Get Started For Free</a
           >
         </div>
-        <div>
+        <div class="lg:w-[60%]">
           <img
             src="images/illustration-mockups.svg"
             alt="illustration-mockups"
@@ -75,75 +65,77 @@
         </div>
       </section>
       <!-- ================== Grow Together section================ -->
-      <section
-        class="flex flex-col lg:flex-row-reverse text-VeryDarkCyan items-center justify-center space-y-8 lg:spacey-0 mb-32"
-      >
-        <div>
-          <img
-            src="images/illustration-grow-together.svg"
-            alt="grow together"
-          />
-        </div>
-        <div>
-          <h2 class="text-2xl mb-4 text-VeryDarkCyan">Grow Together</h2>
-          <p class="text-base text-GrayishBlue">
-            Generate meaningful discussions with your audience and build a
-            strong, loyal community. Think of the insightful conversations you
-            miss out on with a feedback form.
-          </p>
-        </div>
-      </section>
-      <!-- ================== Flowing Conversation section================ -->
-      <section
-        class="flex flex-col lg:flex-row text-VeryDarkCyan items-center justify-center space-y-8 lg:spacey-0 mb-32"
-      >
-        <div>
-          <img
-            src="images/illustration-flowing-conversation.svg"
-            alt="flowing conversation"
-          />
-        </div>
-        <div>
-          <h2 class="text-2xl mb-4 text-VeryDarkCyan">Flowing Conversations</h2>
-          <p class="text-base text-GrayishBlue">
-            You wouldn't paginate a conversation in real life, so why do it
-            online? Our threads have just-in-time loading for a more natural
-            flow.
-          </p>
-        </div>
-      </section>
-      <!-- ================== Your users section================ -->
-      <section
-        class="flex flex-col lg:flex-row-reverse text-VeryDarkCyan items-center justify-center space-y-8 lg:spacey-0 mb-40 relative"
-      >
-        <div>
-          <img src="images/illustration-your-users.svg" alt="users" />
-        </div>
-        <div>
-          <h2 class="text-2xl mb-4 text-VeryDarkCyan">Your Users</h2>
-          <p class="text-base text-GrayishBlue px-2">
-            It takes no time at all to integrate Huddle with your app's
-            authentication solution. This means, once signed in to your app,
-            your users can start chatting immediately.
-          </p>
-        </div>
-
-        <!-- ================ Get started div here ======================== -->
-
-        <div
-          class="bg-VeryPaleCyan rounded-xl flex flex-col justify-center items-center space-y-6 absolute min-w-[90%] lg:min-w-[50%] pb-8"
-          id="your-user-div"
+      <main class="lg:px-40">
+        <section
+          class="flex flex-col lg:flex-row-reverse text-VeryDarkCyan items-center justify-center space-y-8 lg:spacey-0 mb-32 lg:gap-20"
         >
-          <h3 class="text-VeryDarkCyan text-base lg:text-lg font-bold">
-            Ready To Build Your Community?
-          </h3>
-          <a
-            href=""
-            class="bg-Pink text-white text-xs py-4 px-12 rounded-full font-bold"
-            >Get Started For Free</a
+          <div class="lg:w-1/2">
+            <img
+              src="images/illustration-grow-together.svg"
+              alt="grow together"
+            />
+          </div>
+          <div class="lg:w-1/2 text-center lg:text-left">
+            <h2 class="text-2xl mb-4 text-VeryDarkCyan">Grow Together</h2>
+            <p class="text-base text-GrayishBlue">
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
+        </section>
+        <!-- ================== Flowing Conversation section================ -->
+        <section
+          class="flex flex-col lg:flex-row text-VeryDarkCyan items-center justify-center space-y-8 lg:spacey-0 mb-32 lg:gap-20"
+        >
+          <div class="lg:w-1/2">
+            <img
+              src="images/illustration-flowing-conversation.svg"
+              alt="flowing conversation"
+            />
+          </div>
+          <div class="lg:w-1/2 text-center lg:text-left">
+            <h2 class="text-2xl mb-4 text-VeryDarkCyan">
+              Flowing Conversations
+            </h2>
+            <p class="text-base text-GrayishBlue">
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
+        </section>
+        <!-- ================== Your users section================ -->
+        <section
+          class="flex flex-col lg:flex-row-reverse text-VeryDarkCyan items-center justify-center space-y-8 lg:spacey-0 mb-40 lg:gap-20 relative"
+        >
+          <div class="lg:w-1/2">
+            <img src="images/illustration-your-users.svg" alt="users" />
+          </div>
+          <div class="lg:w-1/2 text-center lg:text-left">
+            <h2 class="text-2xl mb-4 text-VeryDarkCyan">Your Users</h2>
+            <p class="text-base text-GrayishBlue px-2">
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
+          <!-- ================ Get started div here ======================== -->
+          <div
+            class="bg-white rounded-xl flex flex-col justify-center items-center space-y-6 absolute min-w-[90%] lg:min-w-[50%] pb-8"
+            id="your-user-div"
           >
-        </div>
-      </section>
+            <h3 class="text-VeryDarkCyan text-base lg:text-lg font-bold">
+              Ready To Build Your Community?
+            </h3>
+            <a
+              href=""
+              class="bg-Pink text-white text-xs py-4 px-12 rounded-full font-bold"
+              >Get Started For Free</a
+            >
+          </div>
+        </section>
+      </main>
     </div>
 
     <footer

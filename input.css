@@ -41,8 +41,10 @@ svg {
 }
 
 @media (min-width: 768px) {
-  header {
+  header,
+  #hero-section {
     background: url("../images/bg-hero-desktop.svg");
     background-repeat: repeat;
+    background-size: cover;
   }
 }
