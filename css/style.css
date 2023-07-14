@@ -842,8 +842,16 @@ header {
   bottom: -260px;
 }
 
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 svg {
   fill: #fff;
+}
+
+.social-media-div:hover svg {
+  fill: hsl(322, 100%, 66%);
 }
 
 .social-media-div {
@@ -857,6 +865,10 @@ svg {
   align-items: center;
 }
 
+.social-media-div:hover {
+  border-color: hsl(322, 100%, 66%);
+}
+
 @media (min-width: 768px) {
   header,
   #hero-section {
@@ -864,6 +876,16 @@ svg {
     background-repeat: repeat;
     background-size: cover;
   }
+}
+
+.hover\:bg-\[\#ff9bdb\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 155 219 / var(--tw-bg-opacity));
+}
+
+.hover\:text-GrayishBlue:hover {
+  --tw-text-opacity: 1;
+  color: hsl(208 11% 55% / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
@@ -931,6 +953,11 @@ svg {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:px-20 {

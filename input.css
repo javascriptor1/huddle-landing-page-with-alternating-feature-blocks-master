@@ -25,8 +25,15 @@ header {
   bottom: -260px;
 }
 
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 svg {
   fill: #fff;
+}
+.social-media-div:hover svg {
+  fill: hsl(322, 100%, 66%);
 }
 
 .social-media-div {
@@ -38,6 +45,10 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.social-media-div:hover {
+  border-color: hsl(322, 100%, 66%);
 }
 
 @media (min-width: 768px) {
